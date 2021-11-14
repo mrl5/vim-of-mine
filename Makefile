@@ -1,4 +1,4 @@
-init: get-plugin-manager get-colors get-pluggins transfer clean
+init: get-plugin-manager get-colors get-pluggins get-coc-plugin transfer clean
 
 get-plugin-manager:
 	@echo getting .vim/autoload ...
@@ -11,6 +11,10 @@ get-colors:
 get-pluggins:
 	@echo getting .vim/plugged ...
 	./.vim/get.sh ./.vim/plugged
+
+get-coc-plugin:
+	@echo getting .vim/plugged/neoclide/coc.nvim ...
+	./.vim/plugged/coc.sh
 
 transfer:
 	mv -v ~/.vimrc ~/.vimrc.old || echo 'no existing .vimrc found'

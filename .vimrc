@@ -26,7 +26,11 @@ Plug 'w0rp/ale'
 Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " -- linters --
 let b:ale_fixers = {'python': ['black', 'isort'], 'javascript': ['prettier', 'eslint'], 'typescript': ['prettier', 'eslint']}
+
+" CoC extensions
+let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright']

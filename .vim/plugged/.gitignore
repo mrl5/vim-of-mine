@@ -1,4 +1,5 @@
 ale/
+coc.nvim/
 editorconfig-vim/
 nerdtree/
 nerdtree-git-plugin/
