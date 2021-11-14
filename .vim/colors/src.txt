@@ -1,0 +1,2 @@
+https://github.com/morhetz/gruvbox.git
+https://github.com/tomasr/molokai.git
