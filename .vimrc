@@ -1,3 +1,4 @@
+set nocompatible
 set number
 set autoindent
 set showmatch
@@ -7,12 +8,19 @@ set softtabstop=4
 set tw=79
 set dictionary+=/usr/share/dict/words
 set t_Cs= " undercurl fix
+set path+=**
+set wildmenu
+set cursorline
+
 syntax enable
+filetype plugin on
 
 autocmd BufNewFile,BufRead *.json set shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.yaml set shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.Makefile set shiftwidth=8 softtabstop=0 noexpandtab
 autocmd BufNewFile,BufRead *.md,rst,txt set spell spelllang=en_us
+
+command! MakeTags !ctags -R .
 
 " -- colors --
 set bg=dark
