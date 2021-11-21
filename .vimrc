@@ -41,4 +41,4 @@ call plug#end()
 let b:ale_fixers = {'python': ['black', 'isort'], 'javascript': ['prettier', 'eslint'], 'typescript': ['prettier', 'eslint']}
 
 " CoC extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright', 'coc-sh']
