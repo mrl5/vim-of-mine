@@ -1,0 +1,2 @@
+# --options=$HOME/.local/lib/ctags/ctags-patterns-for-javascript/ctagsrc
+--options=$HOME/.local/lib/ctags/typescript-ctags/.ctags
