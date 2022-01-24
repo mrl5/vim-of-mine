@@ -10,6 +10,7 @@ set dictionary+=/usr/share/dict/words
 set t_Cs= " undercurl fix
 set path+=**
 set wildmenu
+set hlsearch
 "set cursorline
 
 syntax enable
@@ -35,10 +36,12 @@ Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rust-lang/rust.vim'
+Plug 'NoahTheDuke/vim-just'
 call plug#end()
 
 " -- linters --
-let b:ale_fixers = {'python': ['black', 'isort'], 'javascript': ['prettier', 'eslint'], 'typescript': ['prettier', 'eslint']}
+let b:ale_fixers = {'python': ['black', 'isort'], 'javascript': ['prettier', 'eslint'], 'typescript': ['prettier', 'eslint'], 'rust': ['rustfmt']}
 
 " CoC extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright', 'coc-sh']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright', 'coc-sh', 'coc-rls']
