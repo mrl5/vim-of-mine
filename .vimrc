@@ -21,7 +21,7 @@ autocmd BufNewFile,BufRead *.yaml set shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.Makefile set shiftwidth=8 softtabstop=0 noexpandtab
 autocmd BufNewFile,BufRead *.md,rst,txt set spell spelllang=en_us
 
-command! MakeTags !ctags -R --exclude=node_modules --exclude=dist .
+command! MakeTags !ctags -R --exclude=node_modules --exclude=dist --exclude=target .
 
 " -- colors --
 set bg=dark
