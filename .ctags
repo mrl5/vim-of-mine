@@ -1,2 +1,3 @@
-# --options=$HOME/.local/lib/ctags/ctags-patterns-for-javascript/ctagsrc
---options=$HOME/.local/lib/ctags/typescript-ctags/.ctags
+#--options=/home/kuba/.local/lib/ctags/ctags-patterns-for-javascript/ctagsrc
+#--options=/home/kuba/.local/lib/ctags/typescript-ctags/.ctags
+--options=/home/kuba/.vim/plugged/rust.vim/ctags/rust.ctags

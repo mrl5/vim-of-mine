@@ -37,11 +37,10 @@ Plug 'preservim/nerdtree' |
 Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
-Plug 'NoahTheDuke/vim-just'
 call plug#end()
 
 " -- linters --
 let b:ale_fixers = {'python': ['black', 'isort'], 'javascript': ['prettier', 'eslint'], 'typescript': ['prettier', 'eslint'], 'rust': ['rustfmt']}
 
 " CoC extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright', 'coc-sh', 'coc-rls']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright', 'coc-sh', 'coc-rust-analyzer']
