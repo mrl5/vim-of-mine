@@ -23,6 +23,9 @@ autocmd BufNewFile,BufRead *.md,rst,txt set spell spelllang=en_us
 
 command! MakeTags !ctags -R --exclude=node_modules --exclude=dist --exclude=target .
 
+" -- coc >=0.0.82 fix --
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
 " -- colors --
 set bg=dark
 let g:gruvbox_contrast_dark = 'hard'
