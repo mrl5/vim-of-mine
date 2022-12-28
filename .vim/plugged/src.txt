@@ -2,4 +2,5 @@ https://github.com/w0rp/ale.git
 https://github.com/editorconfig/editorconfig-vim.git
 https://github.com/preservim/nerdtree.git
 https://github.com/Xuyuanp/nerdtree-git-plugin.git
+https://github.com/NoahTheDuke/vim-just.git
 https://github.com/rust-lang/rust.vim.git

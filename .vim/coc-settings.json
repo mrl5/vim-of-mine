@@ -1,3 +1,5 @@
 {
-  "rust-client.disableRustup": true
+  "notification.statusLineProgress": false,
+  "rust-client.disableRustup": true,
+  "rust-analyzer.server.path": "/usr/bin/rust-analyzer"
 }

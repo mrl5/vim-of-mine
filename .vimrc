@@ -39,6 +39,7 @@ Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'NoahTheDuke/vim-just'
 Plug 'rust-lang/rust.vim'
 call plug#end()
 
